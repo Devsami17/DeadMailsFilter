@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dead Email Filter</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+<link rel="stylesheet" href="pricing.css">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="pricing-2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-1">
+                <div class="container">
+                    <div class="col-3">
+                        <img src="website.png" alt="not found" height="60px">
+                    </div>
+                    <div class="col-5">
+                        <a href="#" class="active">Home</a>
+                        <a href="#faq">FAQ's</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-between align-items-center">
+<a id="Member-btn" class="text-decoration-underline" style="font-size: 14px;">Member Area</a>
+<button id="register-btn">Register For Free &nbsp;<i class="bi bi-person-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-2">
+                <img src="website.png" alt="not found" height="60px">
+                <i class="bi bi-list" id="hamburger"></i>
+            </div>
+            <div class="responsive-header">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#blog"><li>Blogs</li></a>
+                   <a href="#faq"><li>FAQs</li></a> 
+                   <a href="#pricing"> <li>Pricing</li></a>
+                    <a href="login.html"><li>Member Area</li></a>
+                    <button class="mt-3" onclick="window.location='register.html'">Register For Free <i class="bi bi-person-fill"></i></button>
+                </ul>
+
+            </div>
+        </header>    
+        <div class="login-diaglog-box">
+            <i onclick="closeDialog()" class="bi bi-x-lg"></i>
+          <p class="text-center fw-bolder">Sign up for free to continue validating</p>
+          <button class="w-100">Sign up with Google</button>
+          <button class="w-100" onclick="OpenSignupDialog()">Sign up with Email</button>
+<p class="text-center mt-4">Already have account? <a onclick="OpenLoginBox()"  class="text-decoration-underline text-primary" >Log in</a></p>
+         </div>
+         <div class="sign-diaglog-box">
+            <i onclick="closeDialog2()" class="bi bi-x-lg"></i>
+          <p class="text-center fw-bolder mb-4">Create an account</p>
+          <form id="SignUpForm">
+          <div>
+            <label for="" >Enter email address</label>
+            <input type="text" required placeholder="Enter your email address">
+          </div>
+          <div>
+            <label for="">Enter password </label>
+            <input type="text" required placeholder="Enter your password">
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+          <button onclick="ReOpenSign()">Back</button>
+
+         </div>
+         <div class="In-diaglog-box">
+            <i onclick="closeDialog3()" class="bi bi-x-lg"></i>
+          <p class="text-center fw-bolder mb-4">Login to your account</p>
+          <form>
+          <div>
+            <label for="" >Enter email address</label>
+            <input type="text" required placeholder="Enter your email address">
+          </div>
+          <div>
+            <label for="">Enter password </label>
+            <input type="text" required placeholder="Enter your password">
+          </div>
+          <button type="submit">Log in</button>
+        </form>
+          <button onclick="ReOpenSign2()">Back</button>
+
+         </div>
+        <main>
+     
+            <section class=" section-1 position-relative ">
+              
+                <div class="container d-flex flex-wrap justify-content-between align-items-baseline">
+                <div class="col-lg-6 col-12 col-sm-12 col-md-12">
+                    <h1>Simple, fast, and secure email validation service</h1>
+                    <p class="mt-3">Email Validation API: Clean Lists, Boost Deliverability & Maximize ROI.Remove fake emails and spam users from your email lists.</p>
+<div class="mt-4">
+<ul >
+    <li>
+        <svg class="tick-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 -rotate-1 text-accent-11 p-0.5 rounded-md bg-accent-4"><path d="M20 6 9 17l-5-5"></path></svg>
+    <p>99.99% availability</p>
+
+    </li>
+    <li>
+        <svg class="tick-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 -rotate-1 text-accent-11 p-0.5 rounded-md bg-accent-4"><path d="M20 6 9 17l-5-5"></path></svg>
+    <p>Real-Time Email Verification</p>
+
+    </li>
+    <li>
+        <svg class="tick-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 -rotate-1 text-accent-11 p-0.5 rounded-md bg-accent-4"><path d="M20 6 9 17l-5-5"></path></svg>
+    <p>Secure Data Handling</p>
+
+    </li>
+    <li>
+        <svg class="tick-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 -rotate-1 text-accent-11 p-0.5 rounded-md bg-accent-4"><path d="M20 6 9 17l-5-5"></path></svg>
+    <p>High Accuracy</p>
+
+    </li>
+</ul>
+
+</div>
+        <button>Get started for free <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-200"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></button>    
+            </div>
+                <div class="col-lg-5  col-12 col-sm-12 col-md-12 ">
+                
+                    <div class="main-form">
+   <div class="form-header">
+    <div>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-6 h-6 left-3 absolute text-base-10"><path d="M8 5H11V19H8V21H16V19H13V5H16V3H8V5ZM2 7C1.44772 7 1 7.44772 1 8V16C1 16.5523 1.44772 17 2 17H8V15H3V9H8V7H2ZM16 9H21V15H16V17H22C22.5523 17 23 16.5523 23 16V8C23 7.44772 22.5523 7 22 7H16V9Z"></path></svg>
+        <input type="email" value="email.address@email.com">
+    </div>
+    <div>
+        <button>Validate <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="remixicon w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-200"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></button>
+    </div>
+   </div>
+   <div class="form-body">
+    <span>Deliverable</span>
+    <p class="mt-2">This email address is valid</p>
+    <div class="slider-catregory ps-2 pe-2">
+        <div class="range-labels">
+            <div class="w-25">
+                0%
+            </div>
+            <div class="w-25">
+                25%
+            </div>
+            <div class="w-25">
+                50%
+            </div>
+            <div class="w-25">
+                75%
+            </div>
+            <div class="w-25">
+                100%
+            </div>
+        </div>
+        <div class="range-slider-2 mt-2 mb-2 position-relative">
+<div class="range-sliders">
+    <div class="w-25"></div>
+    <div class="w-25"></div>
+    <div class="w-25"></div>
+    <div class="w-25"></div>
+    <div class="w-25"></div>
+
+</div>
+<div class="slider-thumbs">
+
+</div>
+        </div>
+    </div>
+   </div>
+   <div class="form-footer">
+    <p>Or instead</p>
+    <button  class="upload-file w-100"><svg style="position: relative;top:-2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="remixicon w-4 h-4 mr-1.5 -ml.0.5"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM13 9V16H11V9H6L12 3L18 9H13Z"></path></svg>&nbsp; Upload a list</button>
+   </div>
+                </div>
+                </div>
+            </div>
+            </section>
+            <section class="container mt-4 d-flex section-2 flex-wrap justify-content-between align-items-center">
+                <div class="col-lg-6 col-12 col-sm-12 col-md-12">
+                    <h3>The World's best automatic traffic generator</h3>
+                    <p>No card is required, and the traffic will appear in your Google Analytics in less than 20 minutes</p>
+                <ul>
+                    <li>
+                        <div class="icon-wrap">
+                            <div class="text-block">1.</div>
+                        </div>
+                        <div class="list-content">
+<h4>Register at <span style="color:#00cd0a">realwebtraffic.com/register</span></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-wrap">
+                            <div class="text-block">2.</div>
+                        </div>
+                        <div class="list-content">
+                            <h4>Click On <span style="color: #00cd0a"> Add New Project</span> link</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-wrap">
+                            <div class="text-block">3.</div>
+                        </div>
+                        <div class="list-content">
+<h4>Fill in the form and click on the blue button</h4>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-lg-5  col-12 col-sm-12 col-md-12">
+                    <img src="https://img.freepik.com/premium-photo/closeup-tablet-searching-inscription_1077205-3122.jpg?w=1060" height="300px" width="100%" style="object-fit: cover;border-radius: 6px;" alt="not" loading="lazy">
+                </div>
+            </section>
+            <section id="faq" class="section-3 container mt-4">
+                <h1 class="text-center text-black">Frequently Asked Questions</h1>
+                <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What kind of services can I buy here?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">We are proud to offer the following services:
+                         <strong> SEO Traffic:</strong>   Natural Organic traffic from high-quality sources. Specially designed to improve your SEO Rank.
+                           <strong>Link-building:</strong>  The best way to improve your SEO Rank in long-term, although may be pricey
+                          <strong>Homepage backlinks: </strong>  It is rare to find gems of backlinks; only subscription-based
+                           <strong>Website Traffic:</strong>  Fast and affordable way of getting high-volume traffic to your website
+                           <strong>SEO A/B Test:</strong>  A unique service to better design landing page titles, specially designed for SEO</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What is included in the Real Web Traffic Generator?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Real Web Traffic offers a free trial, allowing you to test our service before purchasing. The free trial includes the following:
+
+                            1. 2000 free visitors: You will receive 2000 free visitors to your website during the trial period. These visitors are real users who will navigate your pages and spend time on your site.
+                            
+                            2. Targeting options: You can choose the geographical location of the visitors, the number of visits per day, and the duration of each visit. This allows you to test how different targeting options affect your website's traffic.
+                            
+                            3. Dashboard access: You get access to a user-friendly dashboard where you can set up your campaign targeting, track the progress of your campaign, and monitor the statistics of the visitors sent to your website.
+                            
+                            Please note that the free trial has certain limitations, such as not being able to select specific traffic sources or customize the behavior of visitors. The trial aims to get you a feel for the service and assess if it aligns with your website's needs.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            What is the price?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">You can start using SparkTraffic for just $9.9 per month. By default, all the purchases are monthly subscriptions, but you can cancel one right after the first payment.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Is the traffic real?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">The visitors sent to your website are from natural sources who will navigate through your pages and spend a certain amount of time on your site. The traffic comes from various geolocations of your choice, including almost all the countries and the cities.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Will the traffic help me with SEO, ranking, etc.?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">We have different kinds of traffic. If your goal is to improve your Google positions, we recommend you use our Search Console Traffic. This will ensure that you see all of the traffic in your Google Search Console alongside your target keywords.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            I didn't get a single visitor. What's going on?
+
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Please get in touch with our customer service. We will check all the settings of your project and find a solution. There's always a chat online in the bottom right corner.</div>
+                        </div>
+                      </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            
+Is it safe? Do you guarantee results?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">We at realwebtrafficaim to provide a safe and reliable service. We take precautions to filter out potentially harmful traffic sources and avoid loading ads. So our website traffic and SEO services are completely safe for your website and all the ads you have on it.</div>
+                        </div>
+                      </div>
+                  </div>
+            </section>
+            <section id="pricing" class="section-4  mt-4" >
+                
+                <h1 class="text-center mt-5 text-black">Customize your plan</h1>
+                <div class="pricing-parent mt-5">
+                    <div class="pricing-main">
+                        <div class="pricing-main-2">
+                            <div class="pricing-main-3">
+                               
+                                <div class="price-range-main">
+                                 
+                                    <p id="selectedAmount" class="text-center fw-bolder mt-5" style="color: #2F394E"></p>
+                                    <div class="range-container">
+                                        <input type="range" min="0" max="6" value="0" class="range-slider" id="priceRange">
+                                        <div class="range-ticks"></div>
+                                    </div>
+                                </div>
+                                <div class="tabs-parent">
+
+                                    <div class="tabs-content-main">
+                                        <div class="tabs-content">
+                                            <div class="pricing-card-main">
+                                                <div class="pricing-card">
+                                                    <div>
+                                                        <h6>Broze</h6>
+                                                        <span>Discover RealWebTraffic</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                                        <div>
+                                                            <span>Starting From</span>
+                                                        </div>
+                                                        <div>
+                                                            <h4>$0</h4>
+                                                        </div>
+                                                        <div>
+                                                            <button>
+                                                                <span>Sign Up</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-features">
+                                                    <div class="pricing-features-content">
+                                                        <span>Services Included:</span>
+                                                        <ul>
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>300 emails/day</span>
+                                                           </li> 
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>Customizable email templates</span>
+                                                           </li> 
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#">
+                                                        <span>See all features</span>
+                                                        <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-card-main ">
+                                                <div class="pricing-card">
+                                                    <div>
+                                                        <h6>Silver</h6>
+                                                        <span>Ideal for growing businesses</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                                        <div>
+                                                            <span>Starting From</span>
+                                                        </div>
+                                                        <div>
+                                                            <h4>$9
+                                                                </h4>
+                                                        </div>
+                                                        <div>
+                                                            <button class="active">
+                                                                <span>Sign Up</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-features">
+                                                    <div class="pricing-features-content">
+                                                        <span>Everything in Silver, plus:</span>
+                                                        <ul>
+                                                            <li>
+                                                             <img src="ticks.svg" alt=" not found">
+                                                             <span>No daily sending limit</span>
+                                                            </li> 
+                                                            <li>
+                                                             <img src="ticks.svg" alt=" not found">
+                                                             <span>No RealWebsiteTraffic logo (add-on)</span>
+                                                            </li> 
+                                                            <li>
+                                                             <img src="ticks.svg" alt=" not found">
+                                                             <span>Basic reporting & analytics</span>
+                                                            </li> 
+ 
+                                                         </ul>
+                                                    </div>
+                                                    <a href="#">
+                                                        <span>See all features</span>
+                                                        <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-card-main">
+                                                <div class="pricing-card">
+                                                    <div>
+                                                        <h6>Gold</h6>
+                                                        <span>Perfect for High-Volume Needs</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                                        <div>
+                                                            <span>Starting From</span>
+                                                        </div>
+                                                        <div>
+                                                            <h4>$18</h4>
+                                                        </div>
+                                                        <div>
+                                                            <button>
+                                                                <span>Sign Up</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-features">
+                                                    <div class="pricing-features-content">
+                                                        <span>Everything in Gold, plus:</span>
+                                                        <ul>
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>From 5,000 emails/month</span>
+                                                           </li> 
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>Marketing Automation</span>
+                                                           </li> 
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>Predictive Sending AI</span>
+                                                           </li> 
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>Multi-user access (add-on)</span>
+                                                           </li> 
+                                                           <li>
+                                                            <img src="ticks.svg" alt=" not found">
+                                                            <span>Landing Pages</span>
+                                                           </li> 
+
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#">
+                                                        <span>See all features</span>
+                                                        <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                
+                                        
+                                        </div>
+                                      
+                                 
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-2">
+        <div class="pricing-2-main">
+            <div class="mt-lg-2">
+                <p class="text-center fw-bold">Your plan</p>
+                <div class="mt-4">
+                    <div class="pb-2 d-flex justify-content-between">
+                        <span >Package Name</span>
+                        <span id="package-name">
+                        Silver</span>
+                    </div>
+                    <div class="pb-2 d-flex justify-content-between">
+                        <span>Amount Of Traffic</span>
+                        <span id="pricing-amount-2">
+                            5,000</span>
+                    </div>
+                    
+                </div>
+                <div class="d-flex justify-content-between plan-3">
+                    <div>
+                        <span>Total price</span>
+                    
+                    </div>
+                    <div>
+                        <h6 id="pricing-amount">$5.00</h6>
+                    </div>
+                </div>
+                <button  onclick="location.replace('/sign-up')">Sign Up</button>
+            </div>
+        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog" class="section-5 container mt-4">
+                <h1 class="text-center mb-4 text-black">
+                    Real Web Traffic Blogs
+                </h1>
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                    <div class="card" style="width: 30%">
+                        <img src="https://img.freepik.com/premium-photo/earth-globeclock-ice-cream-stick-with-text-google-ads-wooden-background_406607-1547.jpg?uid=R156216877&ga=GA1.1.1445582199.1720358781&semt=ais_hybrid" height="200px" class="card-img-top" alt="not">
+                        <div class="card-body">
+                          <h5 class="card-title">5 Big Reasons Not To Use Traffic Exchanges</h5>
+                          <p class="card-text">A website traffic exchange is a platform where website owners can exchange visitors with other website owners. It involves visiting other members' websites and receiving visits to their websites</p>
+                         
+                        </div>
+                      </div>
+                      <div class="card" style="width: 30%;">
+                        <img src="https://img.freepik.com/free-photo/seo-analysis-business-meeting_53876-94819.jpg?t=st=1723456468~exp=1723460068~hmac=59af45057b73e789a5d9cb324a4fbade68eab8466f0daa3a829ee0bf6318c972&w=740" class="card-img-top" height="200px" alt="not">
+                        <div class="card-body">
+                          <h5 class="card-title">How to get traffic?</h5>
+                          <p class="card-text">We have a special Nano credit that allows you to create absolutely  project for your website.
+                            Nano credit gives you 6000 page views per month absolutely.</p>
+                         
+                        </div>
+                      </div>
+                      <div class="card" style="width: 30%;">
+                        <img src="https://img.freepik.com/premium-photo/small-robot-figure-sits-small-white-plate-small-white-mouse_1021079-259677.jpg?w=1060" class="card-img-top" alt="nt" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">What are traffic bots?</h5>
+                          <p class="card-text">Traffic bots provide non-human traffic to websites. If you are an internet surfer, website traffic probably does not matter much to you. However, if you are the owner of a website, traffic is crucial. </p>
+                      
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+            <div class="col-lg-3 col-10">
+                <img src="website.png" alt="not found" height="65px">
+                <p class="mt-3">© Since 2024 RealWebTraffic All rights reserved</p>
+            </div>
+            <div class="col-lg-3 col-12">
+                <ul>
+                    <li class="active">Contact Us</li>
+                    <li>Email: support@realwebtraffic.com</li>
+                    <li>Address: c. Peru 186 bis,
+                        08020, Barcelona, Spain</li>
+                        <li>Phone:  (407) 446-6647</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-12">
+                <ul>
+                    <li class="active">Pages</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="register.html">Register For Free</a></li>
+                        <li><a href="login.html">Member Area</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-12">
+                <ul>
+                    <li class="active">More about us</li>
+                    
+                    <li>Organic Traffic</li>
+                    <li>Bulk Traffic</li>
+                      
+                        <li>Drive Website Traffic</li>
+                        
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js">
+        
+
+        </script>
+        <script>
+             $(document).ready(function(){
+            $('.additonal-customization').click(function(){
+                $('.additonal-customization-box').toggle(20);
+            });
+        });
+            document.getElementById('form').addEventListener('input', function() {
+ 
+    const inputs = document.querySelectorAll('#form input');
+    
+ 
+    let allFilled = true;
+    inputs.forEach(input => {
+        if (input.value === '') {
+            allFilled = false;
+        }
+    });
+
+   
+    const startButton = document.querySelector('.start');
+    if (allFilled) {
+        startButton.style.backgroundColor = 'var(--second)';
+    } else {
+        startButton.style.backgroundColor = '#85a1bc'; 
+    }
+});
+
+
+        </script>
+        <script src="pricing.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
