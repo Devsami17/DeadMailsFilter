@@ -22,8 +22,8 @@ document.querySelector('header').style.filter="brightness(40%)"
     ; 
  } 
 });
-document.getElementById('Member-btn').addEventListener('click',function OpenSign(){
-   var dialog = document.querySelector('.In-diaglog-box');
+document.getElementById('Regsiter-btn-2').addEventListener('click',function OpenSign(){
+   var dialog = document.querySelector('.login-diaglog-box');
  if(dialog.style.display == "none"){
     dialog.style.display = "block";
     document.querySelector('main').style.filter="brightness(40%)"
@@ -38,6 +38,7 @@ document.querySelector('header').style.filter="brightness(40%)"
     ; 
  } 
 });
+
 document.querySelector('.upload-file').addEventListener('click',function OpenSign(){
      var dialog = document.querySelector('.login-diaglog-box');
    if(dialog.style.display == "none"){
@@ -84,13 +85,7 @@ dialog2.style.display = "none";
 dialog.style.display = "block";
 
 }
-function ReOpenSign2(){
-   var dialog = document.querySelector('.In-diaglog-box');
-   var dialog2 = document.querySelector('.login-diaglog-box');
-dialog.style.display = "none";
-dialog2.style.display = "block";
 
-}
 function closeDialog2(){
    var dialog = document.querySelector('.sign-diaglog-box');
    dialog.style.display = "none";
@@ -101,19 +96,4 @@ function closeDialog2(){
 
 
 }
-function closeDialog3(){
-   var dialog = document.querySelector('.In-diaglog-box');
-   dialog.style.display = "none";
-   document.querySelector('main').style.filter="brightness(100%)"
-   ;   
-   document.querySelector('header').style.filter="brightness(100%)"
-   ; 
 
-
-}
-function OpenLoginBox(){
-   var dialog2 = document.querySelector('.login-diaglog-box');
-   var dialog = document.querySelector('.In-diaglog-box');
-dialog2.style.display ="none";
-dialog.style.display = "block";
-}

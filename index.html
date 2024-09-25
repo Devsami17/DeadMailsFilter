@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="pricing-2.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" >
@@ -36,47 +37,47 @@
                         <a href="#" class="active">Home</a>
                         <a href="#faq">FAQ's</a>
                         <a href="#pricing">Pricing</a>
-                        <a href="#blog">Blog</a>
+                        <a href="#features">Features</a>
                     </div>
                     <div class="col-3 d-flex justify-content-between align-items-center">
-<a id="Member-btn" class="text-decoration-underline" style="font-size: 14px;">Member Area</a>
+<a href="login.html" class="text-decoration-underline" style="font-size: 14px;">Member Area</a>
 <button id="register-btn">Register For Free &nbsp;<i class="bi bi-person-fill"></i></button>
                     </div>
                 </div>
             </div>
             <div class="header-2">
                 <img src="website.png" alt="not found" height="60px">
-                <i class="bi bi-list" id="hamburger"></i>
+                <i class="bi bi-list text-white" id="hamburger"></i>
             </div>
             <div class="responsive-header">
                 <ul>
                     <a href="index.html"><li>Home</li></a>
-                    <a href="#blog"><li>Blogs</li></a>
+                    <a href="#features"><li>Features</li></a>
                    <a href="#faq"><li>FAQs</li></a> 
                    <a href="#pricing"> <li>Pricing</li></a>
                     <a href="login.html"><li>Member Area</li></a>
-                    <button class="mt-3" onclick="window.location='register.html'">Register For Free <i class="bi bi-person-fill"></i></button>
+                    <button class="mt-3" onclick="window.location='login.html'">Register For Free <i class="bi bi-person-fill"></i></button>
                 </ul>
 
             </div>
         </header>    
         <div class="login-diaglog-box">
-            <i onclick="closeDialog()" class="bi bi-x-lg"></i>
-          <p class="text-center fw-bolder">Sign up for free to continue validating</p>
+            <i onclick="closeDialog()" class="text-black bi bi-x-lg "></i>
+          <p class="text-center text-black fw-bolder">Sign up for free to continue validating</p>
           <button class="w-100">Sign up with Google</button>
           <button class="w-100" onclick="OpenSignupDialog()">Sign up with Email</button>
-<p class="text-center mt-4">Already have account? <a onclick="OpenLoginBox()"  class="text-decoration-underline text-primary" >Log in</a></p>
+<p class="text-center mt-4 text-black">Already have account? <a href="login.html"  class="text-decoration-underline text-primary" >Log in</a></p>
          </div>
          <div class="sign-diaglog-box">
-            <i onclick="closeDialog2()" class="bi bi-x-lg"></i>
-          <p class="text-center fw-bolder mb-4">Create an account</p>
+            <i onclick="closeDialog2()" class="bi bi-x-lg text-black"></i>
+          <p class="text-center text-black fw-bolder mb-4">Create an account</p>
           <form id="SignUpForm">
           <div>
-            <label for="" >Enter email address</label>
+            <label for=""  class="text-black">Enter email address</label>
             <input type="text" required placeholder="Enter your email address">
           </div>
           <div>
-            <label for="">Enter password </label>
+            <label for="" class="text-black">Enter password </label>
             <input type="text" required placeholder="Enter your password">
           </div>
           <button type="submit">Sign Up</button>
@@ -84,33 +85,17 @@
           <button onclick="ReOpenSign()">Back</button>
 
          </div>
-         <div class="In-diaglog-box">
-            <i onclick="closeDialog3()" class="bi bi-x-lg"></i>
-          <p class="text-center fw-bolder mb-4">Login to your account</p>
-          <form>
-          <div>
-            <label for="" >Enter email address</label>
-            <input type="text" required placeholder="Enter your email address">
-          </div>
-          <div>
-            <label for="">Enter password </label>
-            <input type="text" required placeholder="Enter your password">
-          </div>
-          <button type="submit">Log in</button>
-        </form>
-          <button onclick="ReOpenSign2()">Back</button>
-
-         </div>
+       
         <main>
      
             <section class=" section-1 position-relative ">
               
                 <div class="container d-flex flex-wrap justify-content-between align-items-baseline">
                 <div class="col-lg-6 col-12 col-sm-12 col-md-12">
-                    <h1>Simple, fast, and secure email validation service</h1>
-                    <p class="mt-3">Email Validation API: Clean Lists, Boost Deliverability & Maximize ROI.Remove fake emails and spam users from your email lists.</p>
+                    <h1 class="text-white">Simple, fast, and secure email validation service</h1>
+                    <p class="mt-3 text-white mb-4">Email Validation API: Clean Lists, Boost Deliverability & Maximize ROI.Remove fake emails and spam users from your email lists.</p>
 <div class="mt-4">
-<ul >
+<ul  >
     <li>
         <svg class="tick-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 -rotate-1 text-accent-11 p-0.5 rounded-md bg-accent-4"><path d="M20 6 9 17l-5-5"></path></svg>
     <p>99.99% availability</p>
@@ -186,137 +171,119 @@
    </div>
    <div class="form-footer">
     <p>Or instead</p>
-    <button  class="upload-file w-100"><svg style="position: relative;top:-2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="remixicon w-4 h-4 mr-1.5 -ml.0.5"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM13 9V16H11V9H6L12 3L18 9H13Z"></path></svg>&nbsp; Upload a list</button>
+
+<button id="uploadBtn" class="upload-file w-100">
+    <svg style="position: relative;top:-2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="remixicon w-4 h-4 mr-1.5 -ml.0.5">
+        <path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM13 9V16H11V9H6L12 3L18 9H13Z"></path>
+    </svg>&nbsp; Upload a list
+</button>
    </div>
                 </div>
                 </div>
             </div>
             </section>
-            <section class="container mt-4 d-flex section-2 flex-wrap justify-content-between align-items-center">
-                <div class="col-lg-6 col-12 col-sm-12 col-md-12">
-                    <h3>The World's best automatic traffic generator</h3>
-                    <p>No card is required, and the traffic will appear in your Google Analytics in less than 20 minutes</p>
-                <ul>
-                    <li>
-                        <div class="icon-wrap">
-                            <div class="text-block">1.</div>
-                        </div>
-                        <div class="list-content">
-<h4>Register at <span style="color:#00cd0a">realwebtraffic.com/register</span></h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-wrap">
-                            <div class="text-block">2.</div>
-                        </div>
-                        <div class="list-content">
-                            <h4>Click On <span style="color: #00cd0a"> Add New Project</span> link</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-wrap">
-                            <div class="text-block">3.</div>
-                        </div>
-                        <div class="list-content">
-<h4>Fill in the form and click on the blue button</h4>
-                        </div>
-                    </li>
-                </ul>
-                </div>
-                <div class="col-lg-5  col-12 col-sm-12 col-md-12">
-                    <img src="https://img.freepik.com/premium-photo/closeup-tablet-searching-inscription_1077205-3122.jpg?w=1060" height="300px" width="100%" style="object-fit: cover;border-radius: 6px;" alt="not" loading="lazy">
-                </div>
+            <section id="features" class="container mt-4  section-2 ">
+<h1 class="text-center text-black mb-5">Features That Make Your List Clean!</h1>
+<div class="d-flex flex-wrap gap-4 " style="margin-top: 80px;">
+    <div class="Single-box">
+        <img src="assets/images/Mail.png" alt="Not Found " >
+        <h5>Minimize Bouncing</h5>
+        <p>Remove invalid bounce email address from your database using an SMTP check.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/2.png" alt="Not Found " >
+        <h5>Disposable Email Checker</h5>
+        <p>Checks to see if an email address from a disposable email provider, such as Mailinator exist.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/3.png" alt="Not Found " >
+        <h5>Catch-All Domain Checker</h5>
+        <p>dead mail filter bulk email verifier can identify catch-all domains, which return valid for all emails.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/4.png" alt="Not Found " >
+        <h5>Syntax Eliminator</h5>
+        <p>Using a bulk email checker, email addresses with invalid syntax are immediately removed from your mailing list.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/5.png" alt="Not Found " >
+        <h5>Anti-greylisting Technology </h5>
+        <p>Simulate a well configured email engine to reduce the number of unknowns.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/6.png" alt="Not Found " >
+        <h5>Email Deduplication</h5>
+        <p>if enabled, all duplicate email addresses are removed automatically.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/7.png" alt="Not Found " >
+        <h5>Email Verification API</h5>
+        <p>dead mail filter API allows you to verify email addresses instantly on your platform.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/8.png" alt="Not Found " >
+        <h5>Selectable Download Options</h5>
+        <p>dead mail filter App allows you to only download the results you want.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/9.png" alt="Not Found " >
+        <h5>Spam-trap Removal </h5>
+        <p> All records of spam are removed thanks to our intelligent Spam-Trap Indicators.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/10.png" alt="Not Found " >
+        <h5>Team Account</h5>
+        <p>Add all your team members to one dead mail filter account and consume the same source of credits.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/11.png" alt="Not Found " >
+        <h5>Domain Confirmation</h5>
+        <p>The email addresses containing inactive, invalid or parked Domains are removed.</p>
+    </div>
+    <div class="Single-box">
+        <img src="assets/images/12.png" alt="Not Found " >
+        <h5>MTA Validation</h5>
+        <p>Checks the Email Transfer Agent to identify whether or not it has a valid MX record.</p>
+    </div>
+</div>
             </section>
-            <section id="faq" class="section-3 container mt-4">
-                <h1 class="text-center text-black">Frequently Asked Questions</h1>
-                <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What kind of services can I buy here?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">We are proud to offer the following services:
-                         <strong> SEO Traffic:</strong>   Natural Organic traffic from high-quality sources. Specially designed to improve your SEO Rank.
-                           <strong>Link-building:</strong>  The best way to improve your SEO Rank in long-term, although may be pricey
-                          <strong>Homepage backlinks: </strong>  It is rare to find gems of backlinks; only subscription-based
-                           <strong>Website Traffic:</strong>  Fast and affordable way of getting high-volume traffic to your website
-                           <strong>SEO A/B Test:</strong>  A unique service to better design landing page titles, specially designed for SEO</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            What is included in the Real Web Traffic Generator?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Real Web Traffic offers a free trial, allowing you to test our service before purchasing. The free trial includes the following:
+            <section id="process" class="container section-5">
+                <h1 class="text-center ">The Process Of Cleaning Emails</h1>
+<div class="d-flex justify-content-center flex-wrap gap-5" style="margin-top: 80px;">
+    <div class="col-lg-3 col-12 col-sm-12 col-md-5 d-flex  flex-column gap-4">
+        <div class="Upper-Area " style="color: #df5439;">
+            <i  class="fa-solid fa-cloud-arrow-up"></i>
+            <h5 >Upload</h5>
+        </div>
+        <div class="Lower-Area bg-brick">
+            <div class="step-number bg-brick">1</div>
+            Upload your data to our secure server using our user-friendly drag-and-drop-interface.
+        </div>
+    </div>
+    <div class="col-lg-3 col-12 col-sm-12 col-md-5 d-flex flex-column gap-4" style="color: #c88d39;">
+        <div class="Upper-Area">
+            <i class="fa-solid fa-circle-check"></i>
+            <h5>Verify</h5>
+        </div>
+        <div class="Lower-Area bg-gold">
+            <div class="step-number bg-gold">2</div>
+            We verify that your email addresses are legitimate and that each mailbox exists and is ready to accept your mail.
+        </div>
+    </div>
+    <div class="col-lg-3 col-12 col-sm-12 col-md-5 d-flex flex-column gap-4" style="color: #71932d;">
+        <div class="Upper-Area">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <h5>Download</h5>
+        </div>
+        <div class="Lower-Area bg-green">
+            <div class="step-number bg-green">3</div>
+            Download your results along with all the information you need to reduce your bounce rate and get more from your mailing campaigns.
+        </div>
+    </div>
+</div>
 
-                            1. 2000 free visitors: You will receive 2000 free visitors to your website during the trial period. These visitors are real users who will navigate your pages and spend time on your site.
-                            
-                            2. Targeting options: You can choose the geographical location of the visitors, the number of visits per day, and the duration of each visit. This allows you to test how different targeting options affect your website's traffic.
-                            
-                            3. Dashboard access: You get access to a user-friendly dashboard where you can set up your campaign targeting, track the progress of your campaign, and monitor the statistics of the visitors sent to your website.
-                            
-                            Please note that the free trial has certain limitations, such as not being able to select specific traffic sources or customize the behavior of visitors. The trial aims to get you a feel for the service and assess if it aligns with your website's needs.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            What is the price?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">You can start using SparkTraffic for just $9.9 per month. By default, all the purchases are monthly subscriptions, but you can cancel one right after the first payment.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Is the traffic real?
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">The visitors sent to your website are from natural sources who will navigate through your pages and spend a certain amount of time on your site. The traffic comes from various geolocations of your choice, including almost all the countries and the cities.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Will the traffic help me with SEO, ranking, etc.?
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">We have different kinds of traffic. If your goal is to improve your Google positions, we recommend you use our Search Console Traffic. This will ensure that you see all of the traffic in your Google Search Console alongside your target keywords.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            I didn't get a single visitor. What's going on?
-
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Please get in touch with our customer service. We will check all the settings of your project and find a solution. There's always a chat online in the bottom right corner.</div>
-                        </div>
-                      </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            
-Is it safe? Do you guarantee results?
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">We at realwebtrafficaim to provide a safe and reliable service. We take precautions to filter out potentially harmful traffic sources and avoid loading ads. So our website traffic and SEO services are completely safe for your website and all the ads you have on it.</div>
-                        </div>
-                      </div>
-                  </div>
             </section>
+          
             <section id="pricing" class="section-4  mt-4" >
                 
                 <h1 class="text-center mt-5 text-black">Customize your plan</h1>
@@ -341,7 +308,7 @@ Is it safe? Do you guarantee results?
                                                 <div class="pricing-card">
                                                     <div>
                                                         <h6>Broze</h6>
-                                                        <span>Discover RealWebTraffic</span>
+                                                        <span>Discover Dead Mail Filter</span>
                                                     </div>
                                                     <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
                                                         <div>
@@ -518,49 +485,95 @@ Is it safe? Do you guarantee results?
                     </div>
                 </div>
             </section>
-            <section id="blog" class="section-5 container mt-4">
-                <h1 class="text-center mb-4 text-black">
-                    Real Web Traffic Blogs
-                </h1>
-                <div class="d-flex justify-content-between mt-5 flex-wrap">
-                    <div class="card" style="width: 30%">
-                        <img src="https://img.freepik.com/premium-photo/earth-globeclock-ice-cream-stick-with-text-google-ads-wooden-background_406607-1547.jpg?uid=R156216877&ga=GA1.1.1445582199.1720358781&semt=ais_hybrid" height="200px" class="card-img-top" alt="not">
-                        <div class="card-body">
-                          <h5 class="card-title">5 Big Reasons Not To Use Traffic Exchanges</h5>
-                          <p class="card-text">A website traffic exchange is a platform where website owners can exchange visitors with other website owners. It involves visiting other members' websites and receiving visits to their websites</p>
-                         
+            <section id="faq" class="section-3 container mt-4">
+                <h1 class="text-center text-black">Frequently Asked Questions</h1>
+                <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is email verification?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A process that checks the validity of multiple email addresses at once.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How do I upload email lists?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Upload your list in CSV, XLS, or TXT format.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Is my data secure?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes, all uploads are encrypted, and we never share or store your data.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            What file formats are supported?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">CSV, XLS, and TXT files are accepted.</div>
                         </div>
                       </div>
-                      <div class="card" style="width: 30%;">
-                        <img src="https://img.freepik.com/free-photo/seo-analysis-business-meeting_53876-94819.jpg?t=st=1723456468~exp=1723460068~hmac=59af45057b73e789a5d9cb324a4fbade68eab8466f0daa3a829ee0bf6318c972&w=740" class="card-img-top" height="200px" alt="not">
-                        <div class="card-body">
-                          <h5 class="card-title">How to get traffic?</h5>
-                          <p class="card-text">We have a special Nano credit that allows you to create absolutely  project for your website.
-                            Nano credit gives you 6000 page views per month absolutely.</p>
-                         
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            What happens if some emails are marked invalid?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">You’ll be notified, and we recommend removing them from your list.</div>
                         </div>
                       </div>
-                      <div class="card" style="width: 30%;">
-                        <img src="https://img.freepik.com/premium-photo/small-robot-figure-sits-small-white-plate-small-white-mouse_1021079-259677.jpg?w=1060" class="card-img-top" alt="nt" height="200px">
-                        <div class="card-body">
-                          <h5 class="card-title">What are traffic bots?</h5>
-                          <p class="card-text">Traffic bots provide non-human traffic to websites. If you are an internet surfer, website traffic probably does not matter much to you. However, if you are the owner of a website, traffic is crucial. </p>
-                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            How much does  verification cost?
+
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Pricing is based on the number of emails verified. Check our pricing page for details.</div>
                         </div>
                       </div>
-                </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            
+                            Do you offer API integration?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">No, our platform  donot supports API for  integration.</div>
+                        </div>
+                      </div>
+                  </div>
             </section>
+      
         </main>
         <footer>
             <div class="container">
             <div class="col-lg-3 col-10">
                 <img src="website.png" alt="not found" height="65px">
-                <p class="mt-3">© Since 2024 RealWebTraffic All rights reserved</p>
+                <p class="mt-3">© Since 2024 Dead Mail Filter All rights reserved</p>
             </div>
             <div class="col-lg-3 col-12">
                 <ul>
                     <li class="active">Contact Us</li>
-                    <li>Email: support@realwebtraffic.com</li>
+                    <li>Email: support@Dead Mail Filter.com</li>
                     <li>Address: c. Peru 186 bis,
                         08020, Barcelona, Spain</li>
                         <li>Phone:  (407) 446-6647</li>
@@ -570,7 +583,7 @@ Is it safe? Do you guarantee results?
                 <ul>
                     <li class="active">Pages</li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                 
                     <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#faq">FAQs</a></li>
                         <li><a href="register.html">Register For Free</a></li>
@@ -581,10 +594,10 @@ Is it safe? Do you guarantee results?
                 <ul>
                     <li class="active">More about us</li>
                     
-                    <li>Organic Traffic</li>
-                    <li>Bulk Traffic</li>
+                    <li>Scan Emails</li>
+                    <li>Remove Duplicates</li>
                       
-                        <li>Drive Website Traffic</li>
+                        <li>API Intergation</li>
                         
                 </ul>
             </div>
@@ -594,37 +607,13 @@ Is it safe? Do you guarantee results?
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="script.js">
         
-
-        </script>
-        <script>
-             $(document).ready(function(){
-            $('.additonal-customization').click(function(){
-                $('.additonal-customization-box').toggle(20);
-            });
-        });
-            document.getElementById('form').addEventListener('input', function() {
- 
-    const inputs = document.querySelectorAll('#form input');
-    
- 
-    let allFilled = true;
-    inputs.forEach(input => {
-        if (input.value === '') {
-            allFilled = false;
-        }
-    });
-
-   
-    const startButton = document.querySelector('.start');
-    if (allFilled) {
-        startButton.style.backgroundColor = 'var(--second)';
-    } else {
-        startButton.style.backgroundColor = '#85a1bc'; 
-    }
-});
+</script>
+<script>
 
 
-        </script>
+
+</script>
+
         <script src="pricing.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

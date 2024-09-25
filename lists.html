@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+<link rel="stylesheet" href="pricing-2.css">
+<link rel="stylesheet" href="pricing.css">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="modal   " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h1>Pick the plan that works best for you</h1>
+                      <p>You can always upgrade or downgrade anytime later, no compromise.</p>
+                      <div class="tabs-parent">
+
+                        <div class="tabs-content-main">
+                            <div class="tabs-content">
+                                <div class="pricing-card-main">
+                                    <div class="pricing-card">
+                                        <div>
+                                            <h6>Broze</h6>
+                                            <span>Discover RealWebTraffic</span>
+                                        </div>
+                                        <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                            <div>
+                                                <span>Starting From</span>
+                                            </div>
+                                            <div>
+                                                <h4>$0</h4>
+                                            </div>
+                                            <div>
+                                                <button>
+                                                    <span>Sign Up</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-features">
+                                        <div class="pricing-features-content">
+                                            <span>Services Included:</span>
+                                            <ul>
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>300 emails/day</span>
+                                               </li> 
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>Customizable email templates</span>
+                                               </li> 
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <span>See all features</span>
+                                            <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing-card-main ">
+                                    <div class="pricing-card">
+                                        <div>
+                                            <h6>Silver</h6>
+                                            <span>Ideal for growing businesses</span>
+                                        </div>
+                                        <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                            <div>
+                                                <span>Starting From</span>
+                                            </div>
+                                            <div>
+                                                <h4>$9
+                                                    </h4>
+                                            </div>
+                                            <div>
+                                                <button class="active">
+                                                    <span>Sign Up</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-features">
+                                        <div class="pricing-features-content">
+                                            <span>Everything in Silver, plus:</span>
+                                            <ul>
+                                                <li>
+                                                 <img src="ticks.svg" alt=" not found">
+                                                 <span>No daily sending limit</span>
+                                                </li> 
+                                                <li>
+                                                 <img src="ticks.svg" alt=" not found">
+                                                 <span>No RealWebsiteTraffic logo (add-on)</span>
+                                                </li> 
+                                                <li>
+                                                 <img src="ticks.svg" alt=" not found">
+                                                 <span>Basic reporting & analytics</span>
+                                                </li> 
+
+                                             </ul>
+                                        </div>
+                                        <a href="#">
+                                            <span>See all features</span>
+                                            <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing-card-main">
+                                    <div class="pricing-card">
+                                        <div>
+                                            <h6>Gold</h6>
+                                            <span>Perfect for High-Volume Needs</span>
+                                        </div>
+                                        <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                            <div>
+                                                <span>Starting From</span>
+                                            </div>
+                                            <div>
+                                                <h4>$18</h4>
+                                            </div>
+                                            <div>
+                                                <button>
+                                                    <span>Sign Up</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-features">
+                                        <div class="pricing-features-content">
+                                            <span>Everything in Gold, plus:</span>
+                                            <ul>
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>From 5,000 emails/month</span>
+                                               </li> 
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>Marketing Automation</span>
+                                               </li> 
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>Predictive Sending AI</span>
+                                               </li> 
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>Multi-user access (add-on)</span>
+                                               </li> 
+                                               <li>
+                                                <img src="ticks.svg" alt=" not found">
+                                                <span>Landing Pages</span>
+                                               </li> 
+
+                                            </ul>
+                                        </div>
+                                        <a href="#">
+                                            <span>See all features</span>
+                                            <svg width="16" height="16" viewBox="0 0 24 22" fill="none" class="dist_marketing-link__icon--sm__ywAFO dist_marketing-link__end__nGkHI"><path d="M23.6833 10.9252C18.3838 10.9252 14.0972 15.8107 14.0972 21.8506M23.5861 10.9253C18.2866 10.9253 14 6.0398 14 -6.10352e-05M24 10.9253H0" stroke="currentColor" stroke-width="2"></path></svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            
+                            </div>
+                          
+                     
+                        </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="options-list-respo">
+            <img src="website.png" alt="not" height="40px">
+            <i onclick="sechumburger()" class="bi bi-list"></i>
+        </div>
+        <div class="respo-header-2">
+            <ul>
+                <li  onclick="window.location='dashboard.html'">Single</li>
+                <li class="active">Lists</li>
+                <li>Log Out</li>
+                <li>10 emails trail left</li>
+            </ul>
+            </div>
+   <div class="options-list container">
+<div class="col-lg-3">
+    <img src="website.png" alt="not" height="50px">
+</div>
+<div class="col-lg-5 d-flex justify-content-center align-items-center gap-4">
+
+    <a onclick="window.location='dashboard.html'" ><i class="bi bi-shield-fill-check" ></i>Single</a>
+    <a class="active"><i class="bi bi-list-task"></i>Lists</a>
+
+</div>
+<div class="col-lg-3 d-flex gap-1 justify-content-between align-items-center">
+   
+   <div>
+    <p class="mb-0">10 emails trial left</p>
+   </div>
+    <div class="d-flex justify-content-normal align-items-center gap-1">
+        <img src="1.png" alt="not found" class="profile-img">
+        <p class="mb-0">Logout</p>
+    </div>
+
+</div>
+</div>  
+        <main class="list">
+
+<section class="container pb-5">
+    <h1>List Validation</h1>
+    <p class="mb-0">Validate multiple email addresses at once and export the results.</p>
+    <p>For security and privacy reasons, we remove email validation data from our servers after 30 days.</p>
+    <div class="List-parent">
+        <div class="list-header">
+            <p class="mb-0">Pick a source</p>
+        </div>
+        <div class="list-body">
+<button onclick="PasteList()">Paste a list</button>
+<input type="file" class="d-none" id="fileInput">
+<button id="uploadButton">Upload a file</button>
+<!-- <span>Paste each address on a new line. Max 50,000 addresses at once.</span>
+<textarea   rows="10">
+
+</textarea>
+<button class="validate-list-btn">Validate List</button> -->
+        </div>
+    </div>
+</section>
+
+
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+<script>
+function validate1(e) {
+    e.disabled = true;
+    e.style.opacity = 0.5;
+    setTimeout(() => {
+        e.disabled = false;
+        e.style.opacity = "1"; 
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        myModal.show();     
+    }, 4000);
+}
+function PasteList(){
+    var header  = document.querySelector('.list-header');
+     var body =  document.querySelector('.list-body');
+     header.style.display = "flex";
+     header.style.gap='12px';      
+    header.innerHTML = `<i onclick="backtolist()" style="cursor:pointer;" class="bi  bi-arrow-left"></i><p class="mb-0">Paste a list</p>`;
+    body.style.display='block';
+    body.innerHTML=`<span>Paste each address on a new line. Max 50,000 addresses at once.</span>
+<textarea   rows="10">
+
+</textarea>
+<button class="validate-list-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Validate List</button> `
+};
+function backtolist(){
+    var header  = document.querySelector('.list-header');
+     var body =  document.querySelector('.list-body');
+     header.style.display = "block";
+     header.style.gap='0px'; 
+     header.innerHTML = `<p class="mb-0">Pick a source</p>`;  
+    body.style.display='flex';
+
+     body.innerHTML=`<button onclick="PasteList()">Paste a list</button>
+<button >Upload a file</button>`
+};
+document.getElementById('uploadButton').addEventListener('click', function() {
+        document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function() {
+        const file = this.files[0];
+        const allowedExtensions = /(\.xls|\.csv|\.txt)$/i;
+
+        if (file && !allowedExtensions.exec(file.name)) {
+            alert('Error: Please select a file with .xls, .csv, or .txt extension.');
+            this.value = '';
+        }else{
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        myModal.show();   
+        }
+    });
+    function sechumburger(){
+    document.querySelector('.respo-header-2').classList.toggle('active')
+}
+</script>
+
+    </body>
+</html>
