@@ -588,6 +588,7 @@ font-size: 30px;
     transition: all 1.5s ease-in-out; /* Smooth transition for width change */
 }
 .header-1 h1 , .header-2 h1 , .sign-up-main h1 {
+    cursor: pointer;
     color: #fff;
     font-size: 25px;
     margin-bottom: 0px;
@@ -597,6 +598,7 @@ font-size: 30px;
     color: #005EB0;
     font-style: italic;
     margin-bottom: 0px;
+    cursor: pointer;
     font-size: 25px !important;
 }
 .options-list-respo h1{
