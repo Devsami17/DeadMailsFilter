@@ -63,7 +63,6 @@
 
             </div>
         </header> 
-   
 
 
         <main>
@@ -72,27 +71,28 @@
             <div class="d-flex flex-column " style="gap:16px">
                 <div  class="d-flex justify-content-center">
        
-                  <h2 class="text-black">Login to NoBounceEmail.com</h2>
+                  <h2 class="text-black">Create an account</h2>
                     
           
             </div>
            
-            <form onsubmit="return validateForm(event)">
-                <div class="sign-up-inputs">
-                    <div class="sign-up-input-group">
-                        <label for="logingmail">E-mail address</label>
-                        <input type="email" id="logingmail" onkeyup="signUpgmail()" placeholder="E-mail address">
-                    </div>
-                    <div class="sign-up-input-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Password">
-                    </div>
-                    <div style="margin-top: 10px;">
-                        <button type="submit" class="sign-up-btn" id="sign-up-btn" style="opacity: 0.5; pointer-events: none;">Login to my account</button>
-                        <button class="sign-btn-google">Log in with Google</button>
-                    </div>
-                </div>
-            </form>
+      <form onsubmit="return validateForm(event)">
+    <div class="sign-up-inputs">
+        <div class="sign-up-input-group">
+            <label for="logingmail">E-mail address</label>
+            <input type="email" id="logingmail" onkeyup="signUpgmail()" placeholder="E-mail address" required>
+        </div>
+        <div class="sign-up-input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div style="margin-top: 10px;">
+            <button type="submit" class="sign-up-btn" id="sign-up-btn" style="opacity: 0.5; pointer-events: none;">Register Now</button>
+            <button  class="sign-btn-google">Register with Google</button>
+        </div>
+    </div>
+</form>
+
             
             
             </div>
@@ -144,36 +144,37 @@
                         </div>
                     </div>
                     </footer>
-       
+        <!-- Bootstrap JavaScript Libraries -->
         <script src="script.js"></script>
         <script>
 function signUpgmail() {
     var emailInput = document.getElementById('logingmail').value;
     var signUpButton = document.getElementById('sign-up-btn');
     
-    if (emailInput.includes('@') && emailInput.includes('.')) { 
+    if (emailInput.includes('@')) {
         signUpButton.style.opacity = "1";
-        signUpButton.style.pointerEvents = "auto";
+        signUpButton.style.pointerEvents = "auto"; 
     } else {
         signUpButton.style.opacity = "0.5";
         signUpButton.style.pointerEvents = "none"; 
     }
 }
-function validateForm(event) {
-    event.preventDefault(); 
 
+function validateForm(event) {
     var emailInput = document.getElementById('logingmail').value;
+    var signUpButton = document.getElementById('sign-up-btn');
     
-    if (!emailInput.includes('@') || !emailInput.includes('.')) {
+    if (!emailInput.includes('@')) {
         alert('Please enter a valid email address');
+        return false;
     } else {
         
-        
-        window.location = 'dashboard.html';  
+        window.location = 'dashboard.html';
+        return false; 
     }
 }
 
-   </script>
+       </script>
         <script
 
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
