@@ -522,6 +522,11 @@ color: #000;
     display: none;
 }
 @media only screen and (min-width:300px) and (max-width:720px){
+.header-2 h1
+
+{
+    font-size: 18px !important;
+}
     .respo-header-2{
         
         background-color: var(--main);
