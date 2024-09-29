@@ -15,7 +15,9 @@ body{
    
 }
 @media only screen and (min-width:1400px){
-
+.table-parent{
+    padding: 0px 0px;
+}
     .section-7 h1{
         font-size: 30px !important;
       }
@@ -326,6 +328,24 @@ width: 100%;
 
 }
 @media only screen and (min-width:300px) and (max-width:550px){
+    .table-parent {
+        width: 100%; /* Full width for the container */
+        overflow-x: hidden; /* Prevent the entire div from scrolling */
+        display: flex;
+        justify-content: center;
+        padding: 10px; /* Optional padding for centering */
+      }
+      
+      .table-wrapper {
+        overflow-x: auto; /* Scroll only the table */
+        width: 100%; /* 70% width for the table wrapper */
+      }
+      
+      .table-wrapper table {
+        width: 100%; /* Table will occupy 100% of the wrapper */
+        border-collapse: collapse;
+        min-width: 600px; /* Minimum width to ensure scrollability */
+      }
     #process .process-parent{
         padding-left: 10px;
         padding-right: 10px;
@@ -1055,6 +1075,7 @@ padding-bottom: 8px;
           }
           .table-parent{
             overflow-x: auto;
+            padding: 0 25px;
           }
           th, td {
             border: 1px solid #666;
